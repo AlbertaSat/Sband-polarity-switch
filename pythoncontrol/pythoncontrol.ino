@@ -49,7 +49,7 @@ void loop() {
     }
 
     if (incomingData == 'D') {
-      digitalWrite(relay2Pin, HIGH); //Turn the TX/RX switch relay OFF, activating Downlink
+      digitalWrite(relay2Pin, LOW); //Turn the TX/RX switch relay OFF, activating Downlink
     }
 
     if (incomingData == 'Q') {
