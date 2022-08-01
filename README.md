@@ -13,6 +13,9 @@ Using an Arduino Mega. Pin 36 is assigned to Relay 1. Pin 38 is assigned to Rela
 'D' sets Pin 38 LOW, deactivating Relay 2. This sets the switch to RX for Downlink.
 'Q' sets both pins 36 and 38 to LOW, deactivating both relays. This sets the default configuration to RHCP and Downlink.
 
+July 28 - Note for future work
+When TX will be in operation, the Ettus B200mini SDR will control switching between TX/RX with it's built in PTT (Push-To-Talk) capability, which sends a signal through a GPIO pin on the ETTUS. Therefore, instead of the Arduino controlling the TX relay, it will need to be the ETTUS GPIO that will connect to In2 on the relay board to control the TX Radiall relay.
+
 ## sband_ps_control.py
 This program uses the pyserial package for serial comms in python and the tkinter package for creating a python gui.
 
@@ -24,3 +27,4 @@ TO DO:
 - Improve the colours of the buttons in the GUI
 - Implement user defined inputs: ask user for the serial port, baud rate, pins of the Arduino
 - Figure out how to make this program and gui available on the ground station software website
+- Set it all up

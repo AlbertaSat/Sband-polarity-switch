@@ -25,7 +25,7 @@ window.configure(background="gray")
 window.geometry("220x160")
 window.title("SWITCH CTRL - PYTHON GUI")
 
-megaBoard = serial.Serial('/dev/cu.usbmodem142301',9600)
+megaBoard = serial.Serial('/dev/tty.usbmodem14201',9600)
 
 def switch_control():
     print(">>> SWITCH CTRL PROGRAM <<<<\n")
