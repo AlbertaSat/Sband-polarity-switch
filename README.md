@@ -27,3 +27,4 @@ TO DO:
 - Improve the colours of the buttons in the GUI
 - Implement user defined inputs: ask user for the serial port, baud rate, pins of the Arduino
 - Figure out how to make this program and gui available on the ground station software website
+- Set it all up
